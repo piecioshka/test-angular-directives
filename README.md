@@ -4,7 +4,7 @@
 
 ## Demo 🎉
 
-* <https://piecioshka.github.io/test-angular-directives/>
+<https://piecioshka.github.io/test-angular-directives/>
 
 ## Features
 
