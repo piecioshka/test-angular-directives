@@ -12,7 +12,7 @@
     "e2e": "ng e2e",
     "e2e:ci": "ng e2e",
     "predeploy": "ng build --base-href=/test-angular-directives/",
-    "deploy": "gh-pages -d dist/test-angular-directives/"
+    "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d dist/test-angular-directives/"
   },
   "dependencies": {
     "@angular/animations": "^14.0.1",
