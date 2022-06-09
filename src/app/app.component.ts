@@ -1,15 +1,13 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
-// const COLORS = require('./colors.json');
-import COLORS from './colors.json';
+import COLORS from "./colors.json";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-
   currentIndex = 0;
   currentBorderColor: string = null;
   availableBorderColors = COLORS;
@@ -24,5 +22,4 @@ export class AppComponent {
     this.currentIndex %= this.availableBorderColors.length;
     this.currentBorderColor = this.availableBorderColors[this.currentIndex];
   }
-
 }
