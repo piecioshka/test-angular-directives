@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, DebugElement } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { By } from "@angular/platform-browser";
 import { SuperBorderDirective } from "./super-border.directive";
@@ -11,12 +11,12 @@ class FakeComponent {}
 
 describe("SuperBorderDirective", () => {
   let fakeComponent: ComponentFixture<FakeComponent>;
-  let directive;
+  let directive: DebugElement;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [FakeComponent, SuperBorderDirective],
-    }).compileComponents();
+    });
 
     fakeComponent = TestBed.createComponent(FakeComponent);
     directive = fakeComponent.debugElement.query(
