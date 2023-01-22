@@ -2,7 +2,7 @@
 
 :ledger: Test app with custom Attribute Directive in Angular.
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/test-angular-directives/>
 
